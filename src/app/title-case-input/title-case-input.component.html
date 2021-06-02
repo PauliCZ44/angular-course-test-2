@@ -1,0 +1,9 @@
+<div class="p-2">
+  <label for="test-input" class="form-label">Title Case Input for Anything</label>
+  <div class="row">
+    <div class="col-6">
+      <input type="text" class="form-control" name="test-input" [(ngModel)]="inputValue"/> <!-- Two way binding -->
+    </div>
+  </div>
+  <p class="fw-bolder p-2">{{inputValue | titleCasePipe}}</p>
+</div>

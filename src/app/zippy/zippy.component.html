@@ -1,0 +1,10 @@
+<div class="my-1">
+  <div class="zippy zippy__main" (click)="isOpened = !isOpened"
+    [ngClass]="{'grey-bg': isOpened, 'white-bg': !isOpened}">
+    <span class="zippy-header">{{title}}</span>
+    <i class="bi bi-arrow-left-square" [class.rotate-90]="isOpened">  </i>
+  </div>
+  <div class="zippy" *ngIf="isOpened">
+    <ng-content></ng-content>
+  </div>
+</div>

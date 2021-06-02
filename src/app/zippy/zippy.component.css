@@ -1,0 +1,48 @@
+.zippy {
+  display: flex;
+  border: 1px solid lightgray;
+  margin: 0em 3em;
+  padding: 0.5em 0.75em;
+  justify-content: space-between;
+}
+
+.zippy-header {
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 1.25em;
+}
+
+.zippy__main{
+    border-radius: 3px 3px 0px 0px;
+}
+
+.zippy__main:hover {
+  transition: background-color 100ms ease-in;
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.zippy__main.grey-bg:hover {
+  cursor: pointer;
+  background-color: #cccccc;
+}
+
+.grey-bg {
+  background-color: rgb(207, 207, 207);
+}
+
+.white-bg {
+  background-color: white;
+}
+
+.bi-arrow-left-square.rotate-90 {
+  transform: rotateZ(-90deg) translateX(-0px);
+  color: black;
+}
+
+.bi-arrow-left-square {
+  color: rgb(87, 87, 87);
+  transform: rotateZ(0deg);
+  transform-origin: center;
+  transition: transform 250ms ease-in-out;
+}

@@ -1,0 +1,40 @@
+/* Add application styles & imports to this file! */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~bootstrap-icons/font/bootstrap-icons.css';
+
+.fs-08 {
+  font-size: 0.8rem;
+}
+
+.heading {
+  margin: 0 0.5em;
+  padding: 0;
+}
+
+p {
+  font-family: Lato;
+}
+
+label {
+  font-weight: 500;
+}
+
+.form-group {
+  margin-bottom: 0.5em;
+}
+
+.heading {
+  margin: 0 0.5em;
+  padding: 0;
+}
+
+.alert {
+  padding: 0.25em 0.5em;
+  margin-top: 0.25em;
+  font-size: smaller;
+}
+
+input.ng-touched.ng-invalid,
+select.ng-touched.ng-invalid {
+  border: 1px solid rgb(199, 0, 0);
+}

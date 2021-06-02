@@ -1,0 +1,23 @@
+<div class="p-4">
+  <form #f="ngForm" (ngSubmit)=submit(f)>
+    <div class="form-group">
+      <label for="test1">FirstLabel</label>
+      <input ngModel name="test1" id="test1" class="form-control" type="text"/>
+    </div>
+    <div class="form-group">
+      <label for="test2">Second Label</label>
+      <input ngModel name="test2" id="test2" class="form-control" type="text"/>
+    </div>
+    <div ngModelGroup="myFirstModelGroup">
+      <div class="form-group">
+        <label for="test3">Second Label</label>
+        <input ngModel name="test3" id="test3" class="form-control" type="text"/>
+
+        <input ngModel type="checkbox" id="isChecked" lass="form-check-input" name="isChecked">
+        <label  class="form-check-label" for="isChecked">Checked</label>
+
+      </div>
+    </div>
+    <button class="btn btn-primary my-2">Submit</button>
+  </form>
+</div>

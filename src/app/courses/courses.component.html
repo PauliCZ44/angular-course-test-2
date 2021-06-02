@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let course of courses">
+    {{course.name}}<span><star></star></span>
+    <like [likesCount]="course.likesCount" [isLiked]="course.isLiked"></like>
+  </li>
+</ul>

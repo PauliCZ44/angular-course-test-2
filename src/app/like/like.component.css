@@ -1,0 +1,8 @@
+.bi {
+  color: rgb(189, 189, 189);
+  cursor: pointer;
+}
+
+.used {
+  color: deeppink;
+}
