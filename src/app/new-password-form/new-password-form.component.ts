@@ -15,14 +15,18 @@ import { PasswordValidators } from './password.validators';
   styleUrls: ['./new-password-form.component.css']
 })
 export class NewPasswordFormComponent {
-  myForm = new FormGroup({
-    oldPassword: new FormControl('', [
-      Validators.required,
-      PasswordValidators.isNotOldPass
-    ]),
-    newPassword: new FormControl('', Validators.required),
-    newPasswordAgain: new FormControl('', Validators.required)
-  });
+  myForm = new FormGroup(
+    {
+      oldPassword: new FormControl(
+        '',
+        [Validators.required],
+        PasswordValidators.asyncIsNotOldPass
+      ),
+      newPassword: new FormControl('', Validators.required),
+      newPasswordAgain: new FormControl('', Validators.required)
+    },
+    PasswordValidators.passwordsAreEqual
+  );
 
   resetPassword() {
     console.log('reseting');
