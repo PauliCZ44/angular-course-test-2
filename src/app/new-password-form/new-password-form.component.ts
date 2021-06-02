@@ -7,6 +7,8 @@ import {
   Validators
 } from '@angular/forms';
 
+import { PasswordValidators } from './password.validators';
+
 @Component({
   selector: 'new-password-form',
   templateUrl: './new-password-form.component.html',
@@ -14,7 +16,10 @@ import {
 })
 export class NewPasswordFormComponent {
   myForm = new FormGroup({
-    oldPassword: new FormControl('', Validators.required),
+    oldPassword: new FormControl('', [
+      Validators.required,
+      PasswordValidators.isNotOldPass
+    ]),
     newPassword: new FormControl('', Validators.required),
     newPasswordAgain: new FormControl('', Validators.required)
   });

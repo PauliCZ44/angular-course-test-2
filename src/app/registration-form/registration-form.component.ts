@@ -11,8 +11,8 @@ export class RegistrationFormComponent {
   }
 
   categories = [
-    { name: 'Education', id: 0 },
-    { name: 'IT', id: 1 },
-    { name: 'Economics', id: 2 }
+    { name: 'Education', id: 1 },
+    { name: 'IT', id: 2 },
+    { name: 'Economics', id: 3 }
   ];
 }
