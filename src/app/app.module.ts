@@ -14,6 +14,7 @@ import { TestFormComponent } from './test-form/test-form.component';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import { ReactiveFormComponent } from './reactive-registration-form/reactive-form.component';
 import { NewPasswordFormComponent } from './new-password-form/new-password-form.component';
+import { TodosComponent } from './todos/todos.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, ReactiveFormsModule],
@@ -29,7 +30,8 @@ import { NewPasswordFormComponent } from './new-password-form/new-password-form.
     TestFormComponent,
     RegistrationFormComponent,
     ReactiveFormComponent,
-    NewPasswordFormComponent
+    NewPasswordFormComponent,
+    TodosComponent
   ],
   bootstrap: [AppComponent],
   providers: [CourseService]
